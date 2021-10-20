@@ -6,7 +6,7 @@ services:
     volumes:
       - type: volume
         source: war
-        target: /App42PaaS-Java-MySQL-Sample/target
+        target: /app42/target
 
   web:
     image: tomcat:9
