@@ -22,12 +22,12 @@ services:
   db:
     image: mysql:5.7
     environment:
-      MYSQL_ROOT_PASSWORD: my_secret_pw_shh
-      MYSQL_DATABASE: test_db
-      MYSQL_USER: devuser
-      MYSQL_PASSWORD: devpass
+      MYSQL_ROOT_PASSWORD: jc31d2qyy7h9jv5jn1u9uosjksxzaizw
+      MYSQL_DATABASE: dd
+      MYSQL_USER: acp4pogynvaeidfj
+      MYSQL_PASSWORD: jc31d2qyy7h9jv5jn1u9uosjksxzaizw
     ports:
-      - "3306:3306"
+      - "8514:3306"
     volumes:
       - ./mysql:/var/lib/mysql
 
