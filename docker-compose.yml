@@ -9,7 +9,7 @@ services:
         target: /app42/target
 
   web:
-    image: tomcat:9
+    image: tomcat:6.0.53
     volumes:
       - type: volume
         source: war
@@ -20,7 +20,7 @@ services:
       - db
 
   db:
-    image: mysql:latest
+    image: mysql:5.5.48
     environment:
       MYSQL_ROOT_PASSWORD: 'secret'
       MYSQL_DATABASE: 'db42'
