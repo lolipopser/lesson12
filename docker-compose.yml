@@ -3,7 +3,10 @@ version: '3'
 services:
   build-war:
     build: ./builder
-
+    volumes:
+      - type: volume
+        source: war
+        target: App42PaaS-Java-MySQL-Sample/target
 
   web:
     image: tomcat:9
