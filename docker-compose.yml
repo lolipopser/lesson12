@@ -10,7 +10,7 @@ services:
 
   web:
     image: tomcat:9
-	volumes:
+    volumes:
       - type: volume
         source: war
         target: /usr/local/tomcat/webapps
