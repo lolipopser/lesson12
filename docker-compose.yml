@@ -1,7 +1,7 @@
 version: '3'
 services:
   build-war:
-    image:
+    build: ./builder
     volumes:
       - type: volume
         source: war
