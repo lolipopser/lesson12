@@ -9,7 +9,7 @@ services:
        target: /app42/target
 
   web:
-    image: tomcat:jdk8-alpine
+    image: tomcat:7-jre8-alpine
     volumes:
      - type: volume
        source: war
