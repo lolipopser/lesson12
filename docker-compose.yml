@@ -4,9 +4,7 @@ services:
   builder:
     build: ./builder
     volumes:
-     - type: vplume
-       source: war
-       target: /app42/target
+     -war:/app42/target
 
   web:
     image: tomcat:7-jre8-alpine
