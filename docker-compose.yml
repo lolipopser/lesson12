@@ -1,6 +1,12 @@
 ---
 version: '3.2'
 services:
+  builder:
+    build: ./
+    volumes:
+     - type: vplume
+       source: war
+       target: /app42/target
 
   web:
     image: tomcat:7
