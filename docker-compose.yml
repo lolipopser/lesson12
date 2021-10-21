@@ -5,8 +5,8 @@ services:
     build: ./builder
     volumes:
       - type: vplume
-        source: war
-        target: /app42/target
+      - source: war
+      - target: /app42/target
 
   web:
     image: tomcat:9
