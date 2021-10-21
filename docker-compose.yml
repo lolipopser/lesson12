@@ -16,10 +16,10 @@ services:
       - db
 
   db:
-    image: mariadb:10.1
+    image: mysql:5.7
     environment:
       - MYSQL_ROOT_PASSWORD=secret
-      - MARIADB_DATABASE=app42
+      - MYSQL_DATABASE=app42
 
     volumes:
       - ./mysql:/var/lib/mysql
