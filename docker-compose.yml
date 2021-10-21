@@ -3,10 +3,10 @@ version: '3'
 services:
   build-war:
     build: ./builder
-     volumes:
-     - type: volume
-       source: war
-       target: /app42/target
+      volumes:
+        - type: volume
+        - source: war
+        - target: /app42/target
 
   web:
     image: tomcat:7
