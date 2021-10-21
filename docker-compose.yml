@@ -25,8 +25,7 @@ services:
     environment:
         MYSQL_ROOT_PASSWORD: secret
         MYSQL_DATABASE: ap42
-        MYSQL_USER: root
-        MYSQL_PASSWORD: secret
+
 
 volumes:
   war:
