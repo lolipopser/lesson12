@@ -3,7 +3,7 @@ version: '3'
 services:
   build-war:
     build: ./builder
-     volumes:
+    volumes:
       - type: volume
         source: war
         target: /app42/target
