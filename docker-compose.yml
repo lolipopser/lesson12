@@ -9,7 +9,7 @@ services:
         target: /app42/target
 
   web:
-    image: tomcat:6.0.53
+    image: tomcat:9
     volumes:
       - type: volume
         source: war
