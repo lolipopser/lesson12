@@ -21,7 +21,7 @@ services:
       - build-war
 
   db:
-    image: mariadb:10.1
+    image: mariadb
     environment:
       - MYSQL_ROOT_PASSWORD=secret
     volumes:
