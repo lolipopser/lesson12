@@ -18,7 +18,7 @@ services:
       - "8080:8080"
     depends_on:
       - db
-      - build_war
+      - build-war
 
   db:
     image: mysql:5.7
