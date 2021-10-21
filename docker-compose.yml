@@ -16,8 +16,9 @@ services:
        target: /usr/local/tomcat/webapps
     ports:
       - "8080:8080"
-    depends_on:
-
+#    depends_on:
+#      - db
+#     - builder
 
   db:
     image: mariadb:10.1
