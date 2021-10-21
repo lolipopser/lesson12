@@ -21,7 +21,7 @@ services:
       - build-war
 
   db:
-    image: mysql:8
+    image: mysql
     environment:
         MYSQL_ROOT_PASSWORD: secret
         MYSQL_DATABASE: ap42
