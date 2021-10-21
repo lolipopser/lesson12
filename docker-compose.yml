@@ -4,16 +4,16 @@ services:
   builder:
     build: ./builder
     volumes:
-       type: vplume
-       source: war
-       target: /app42/target
+      type: vplume
+      source: war
+      target: /app42/target
 
   web:
     image: tomcat:9
     volumes:
-      - type: volume
-        source: war
-        target: /usr/local/tomcat/webapps
+      type: volume
+      source: war
+      target: /usr/local/tomcat/webapps
     ports:
       - "8080:8080"
 
