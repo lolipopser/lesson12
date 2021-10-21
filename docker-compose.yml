@@ -17,8 +17,7 @@ services:
     ports:
       - "8080:8080"
     depends_on:
-      - db
-      - builder
+
 
   db:
     image: mariadb:10.1
