@@ -3,17 +3,17 @@ version: '3'
 services:
   build-war:
     build: ./builder
-    volumes:
-      - type: volume
-        source: war
-        target: /app42/target
+     volumes:
+     - type: volume
+       source: war
+       target: /app42/target
 
   web:
     image: tomcat:7
     volumes:
-      - type: volume
-        source: war
-        target: /usr/local/tomcat/webapps
+     - type: volume
+       source: war
+       target: /usr/local/tomcat/webapps
     ports:
       - "8080:8080"
     depends_on:
