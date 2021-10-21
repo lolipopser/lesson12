@@ -9,9 +9,7 @@ services:
   web:
     image: tomcat:7-jre8-alpine
     volumes:
-     - type: volume
-       source: war
-       target: /usr/local/tomcat/webapps
+     - war:/usr/local/tomcat/webapps
     ports:
       - "8080:8080"
     depends_on:
